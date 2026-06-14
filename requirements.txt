@@ -1,0 +1,28 @@
+# Khoa học dữ liệu cơ bản 
+numpy>=1.24 
+pandas>=2.0 
+scipy>=1.10 
+matplotlib>=3.7 
+seaborn>=0.12 
+ 
+# Tối ưu hóa tuyến tính & phi tuyến 
+pulp>=2.7 
+cvxpy>=1.4 
+pyomo>=6.6 
+ 
+# Tối ưu đa mục tiêu & tiến hóa 
+pymoo>=0.6.1 
+ 
+# Học tăng cường (Reinforcement Learning) 
+gymnasium>=0.29 
+stable-baselines3>=2.1 
+torch>=2.0 
+ 
+# Dashboard & trực quan hóa 
+streamlit>=1.28 
+plotly>=5.17 
+ 
+# Tiện ích 
+tqdm>=4.65 
+openpyxl>=3.1 
+jupyterlab>=4.0
