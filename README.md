@@ -39,6 +39,7 @@ Notebook này triển khai **11/12 bài tập** của bộ đề AIDEOM-VN, bao 
 ├── dashboard.py                          # Dashboard Streamlit (Bài 12)
 ├── requirements.txt                      # Danh sách thư viện Python
 ├── modules                               # Chứa cách giải của 12 bài trong dashboard
+├── winglpk-4.65                          # Solver GLPK cho bài 10
 ├── src                                   # Chứa các file dùng chung của dashboard
 ├── notebooks                             # Chứa các model huấn luyện của 11 bài toán
 └── report                                # Chứa báo cáo bài tập cuối kì dạng .pdf của học phần
@@ -60,6 +61,21 @@ python -c "import gymnasium, stable_baselines3, torch; print('RL OK')"
 python -c "import streamlit; print('Dashboard OK')"
 ```
 Solver GLPK (Windows 64-bit):
+Folder chứa solver đã được tích hợp sẵn trong folder code. Sau khi tải về, hãy cài đặt như sau:
+**Thêm GLPK vào biến môi trường (Environment Variables):**
+> Mở Start Menu, gõ Environment Variables và chọn Edit the system environment variables.
+> Trong cửa sổ System Properties, nhấn nút Environment Variables....
+> Ở phần System variables, tìm biến Path và nhấn Edit....
+> Nhấn New và thêm đường dẫn đến thư mục chứa file thực thi (chọn thư mục 64-bit). Ví dụ: C:\winglpk-4.65\glpk-4.65\w64.
+> Nhấn OK để lưu tất cả các cửa sổ.
+
+**Kiểm tra cài đặt:**
+```PowerShell
+glpsol --version
+```
+> Nếu màn hình hiển thị thông tin phiên bản của GLPK thì bạn đã cài đặt và cấu hình PATH thành công.
+
+**Tổng hợp thư viện cần dùng:**
 
 | Thư viện | Phiên bản khuyến nghị | Dùng trong bài |
 |----------|----------------------|----------------|
