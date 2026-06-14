@@ -53,12 +53,13 @@ Cài các thư viện cần sử dụng, đã được thiết lập trong file 
 pip install -r requirements.txt
 pip install torch torchvision torchaudio        #PyTorch với máy không có GPU rời
 ```
-Nhưng nếu muốn cài trước:
-```python
-!pip install -q numpy pandas scipy matplotlib seaborn \
-    pulp cvxpy pyomo pymoo gymnasium stable-baselines3 plotly
-!apt-get -qq install -y glpk-utils        # solver cho Pyomo (Bài 10)
+Kiểm tra bằng terminal:
+```PowerShell
+python -c "import numpy, pandas, scipy, pulp, cvxpy, pymoo, pyomo; print('OK')"
+python -c "import gymnasium, stable_baselines3, torch; print('RL OK')"
+python -c "import streamlit; print('Dashboard OK')"
 ```
+Solver GLPK (Windows 64-bit):
 
 | Thư viện | Phiên bản khuyến nghị | Dùng trong bài |
 |----------|----------------------|----------------|
