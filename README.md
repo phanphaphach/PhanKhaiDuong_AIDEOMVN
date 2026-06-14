@@ -48,12 +48,16 @@ Notebook này triển khai **11/12 bài tập** của bộ đề AIDEOM-VN, bao 
 
 ## 📦 Thư viện sử dụng
 
-Notebook tự cài các thư viện thiếu, nhưng nếu muốn cài trước:
-
+Cài các thư viện cần sử dụng, đã được thiết lập trong file requirements.txt:
+```python
+pip install -r requirements.txt
+pip install torch torchvision torchaudio        #PyTorch với máy không có GPU rời
+```
+Nhưng nếu muốn cài trước:
 ```python
 !pip install -q numpy pandas scipy matplotlib seaborn \
     pulp cvxpy pyomo pymoo gymnasium stable-baselines3 plotly
-!apt-get -qq install -y glpk-utils   # solver cho Pyomo (Bài 10)
+!apt-get -qq install -y glpk-utils        # solver cho Pyomo (Bài 10)
 ```
 
 | Thư viện | Phiên bản khuyến nghị | Dùng trong bài |
